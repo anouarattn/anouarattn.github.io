@@ -1,341 +1,97 @@
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="https://www.myairtrade.com/favicon.ico" type="image/x-icon">
-<link rel="icon" href="https://www.myairtrade.com/favicon.ico" type="image/x-icon">
-<meta name="robots" content="index,follow">
-
-<title>Airbus A380 for Lease or Sale - MyAirTrade</title>
-
-<link rel="stylesheet" type="text/css" href="https://www.myairtrade.com/css/bootstrap.min.css?v=1.3">
-<link rel="stylesheet" type="text/css" href="https://www.myairtrade.com/css/jquery-confirm.min.css?v=1.3">
-<link rel="stylesheet" type="text/css" href="https://www.myairtrade.com/fonts/css/open-iconic-bootstrap.min.css?v=1.3">
-
-<link href="https://www.myairtrade.com/css/main.css?v=1.64" rel="stylesheet" type="text/css">
-
-<link href="https://www.myairtrade.com/css/jsgrid.css?v=1.5.3.1" rel="stylesheet" type="text/css">
-<link href="https://www.myairtrade.com/css/jsgrid-theme.css?v=1.5.3.12" rel="stylesheet" type="text/css">
-<link href="https://www.myairtrade.com/css/datepicker.css?v=1.3" rel="stylesheet" type="text/css">
-
-<script src="https://www.myairtrade.com/js/jquery-1.12.4.min.js?v=1.3" type="text/javascript"></script>
-<script src="https://www.myairtrade.com/js/jsgrid.min.js?v=1.5.3" type="text/javascript"></script>
-<script src="https://www.myairtrade.com/js/datepicker.min.js?v=1.3" type="text/javascript"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12866001-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-12866001-3');
-</script>
-
-<script type="text/javascript">
-    function ga_track(event, data) {
-        if(data.company) {
-            gtag('event', event+'_'+data.banner+'_'+data.company, data);
-            return true;
-        }
-        if(data.banner) {
-            gtag('event', event+'_'+data.banner, data);
-            return true;
-        }
-        gtag('event', event, data);
-    }
-    $(document).ready(function() {
-        $(".bnr_tr").click(function(e) {
-            var bnr = $(this).data('bnr');
-            var comp = $(this).data('comp');
-            var data = { banner: bnr };
-            if(comp) { data.company = comp; }
-            ga_track('banner_click', data);
-        });
-    });
-</script>
-	<meta name="keywords" content="A380 for lease, A380 for sale, A380 for acmi, A380 for wet lease, A380 lease, A380 sale aircraft for lease, aircraft for sale, engines for lease, engines for sale">
-	<meta name="description" content="A380 for Lease ACMI Sale aircraft engines for Lease ACMI Sale">
-</head>
-
-<body>
-
-	<div class="wrapper"> <!-- container -->
-		<div class="row pt-0 pb-1 align-items-center no-gutters" style="min-height: 65px;">
-  <div class="col-md-6 text-left">
-    <a href="https://www.myairtrade.com/" class="mr-1 link-img">
-      <img src="https://www.myairtrade.com/images/logo.png" alt="myairtrade" class="img-fluid align-middle">
-    </a>
-    <div class="user align-middle">
-  <div class="header_contacts">
-        <a href="https://www.myairtrade.com/login">
-      <img src="https://www.myairtrade.com/images/img_login.png" alt="" class="img-fluid">
-    </a>
-        <a href="mailto:sin@myairtrade.com">
-      <img src="https://www.myairtrade.com/images/img_contact.png" alt="" class="img-fluid">
-    </a>
-    <a href="https://www.linkedin.com/company/myairtrade" target="_blank">
-      <img src="https://www.myairtrade.com/images/img_linkedin.png" alt="" class="img-fluid">
-    </a>
-    <a href="https://twitter.com/myairtrade" target="_blank">
-      <img src="https://www.myairtrade.com/images/img_twitter.png" alt="" class="img-fluid">
-    </a>
-  </div>
-  </div>
-  </div>
-  <div class="col-md-6 text-right">
-     <a href="/assets/cl/1" target="_blank" rel="nofollow" class="bnr_tr0" data-bnr="1"><img src="/assets/1" alt="" class="img-fluid"></a>
-<script type="text/javascript">ga_track('banner_impression', {banner: 1})</script>   </div>
-</div>
-
-<div class="row no-gutters">
-  <div class="col-md">
-    <a href="https://www.myairtrade.com/available" class="menu active">Available</a>
-  </div>
-  <div class="col-md">
-    <a href="https://www.myairtrade.com/fleetintel" class="menu ">FleetIntel</a>
-  </div>
-  <div class="col-md">
-    <a href="https://www.myairtrade.com/user/register" class="menu ">Updates</a>
-  </div>
-  <!--
-  <div class="col-md">
-    <a href="https://www.myairtrade.com/acmir" class="menu ">ACMIR</a>
-  </div>-->
-  <div class="col-md">
-    <a href="https://www.myairtrade.com/resources" class="menu ">Resources</a>
-  </div>
-</div>
-
-		<div class="page_content">
-			<div class="page_title row no-gutters">
-  <div class="col-sm-6">
-    <h5>
-      Available - Airbus A380
-      <select id="ddl_models">
-        <option value="0">More Models</option>
-                <option value="A300_A310">A300/A310</option>
-                <option value="A319">A319</option>
-                <option value="A320">A320</option>
-                <option value="A321">A321</option>
-                <option value="A330">A330</option>
-                <option value="A340">A340</option>
-                <option value="A380">A380</option>
-                <option value="Antonov">Antonov</option>
-                <option value="ATR_42">ATR 42</option>
-                <option value="ATR_72">ATR 72</option>
-                <option value="B727">B727</option>
-                <option value="B737">B737</option>
-                <option value="B737CL">B737CL</option>
-                <option value="B747">B747</option>
-                <option value="B757">B757</option>
-                <option value="B767">B767</option>
-                <option value="B777">B777</option>
-                <option value="BAE_Systems">BAE Systems</option>
-                <option value="Beechcraft">Beechcraft</option>
-                <option value="CASA">CASA</option>
-                <option value="Cessna">Cessna</option>
-                <option value="CRJ-100_200">CRJ-100/200</option>
-                <option value="CRJ-700_900_1000">CRJ-700/900/1000</option>
-                <option value="DC10_MD11">DC10/MD11</option>
-                <option value="DC8">DC8</option>
-                <option value="DC9_MD80_MD90">DC9/MD80/MD90</option>
-                <option value="DHC6">DHC6</option>
-                <option value="DHC8">DHC8</option>
-                <option value="Dornier">Dornier</option>
-                <option value="EMB-120">EMB-120</option>
-                <option value="ERJ-135_145">ERJ-135/145</option>
-                <option value="ERJ-170_190">ERJ-170/190</option>
-                <option value="Fairchild">Fairchild</option>
-                <option value="Fokker">Fokker</option>
-                <option value="Let">Let</option>
-                <option value="SAAB">SAAB</option>
-                <option value="Short">Short</option>
-                <option value="AE3007">AE3007</option>
-                <option value="CF34">CF34</option>
-                <option value="CF6">CF6</option>
-                <option value="CFM56-3">CFM56-3</option>
-                <option value="CFM56-5">CFM56-5</option>
-                <option value="CFM56-7">CFM56-7</option>
-                <option value="CT7">CT7</option>
-                <option value="GE90_Genx">GE90/Genx</option>
-                <option value="Honeywell_APUs">Honeywell APUs</option>
-                <option value="Honeywell_Engines">Honeywell Engines</option>
-                <option value="Honeywell_GTCP131">Honeywell GTCP131</option>
-                <option value="Honeywell_GTCP331">Honeywell GTCP331</option>
-                <option value="Honeywell_GTCP85">Honeywell GTCP85</option>
-                <option value="HS_APUs">HS APUs</option>
-                <option value="JT3D_JT8D_JT9D">JT3D/JT8D/JT9D</option>
-                <option value="LEAP">LEAP</option>
-                <option value="PT6A">PT6A</option>
-                <option value="PW100">PW100</option>
-                <option value="PW2000">PW2000</option>
-                <option value="PW4000">PW4000</option>
-                <option value="PW900">PW900</option>
-                <option value="RB211-524_535">RB211-524/535</option>
-                <option value="Tay">Tay</option>
-                <option value="Trent">Trent</option>
-                <option value="V2500">V2500</option>
-              </select>
-    </h5>
-  </div>
-  <div class="col-sm-6 text-right">
-    <span class="shares_top">
-    <iframe src="https://www.facebook.com/plugins/like.php?href=https://www.myairtrade.com/available/A380&amp;layout=button_count&amp;show_faces=false&amp;width=105&amp;action=recommend&amp;colorscheme=light&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:105px; height:20px;" allowTransparency="true"></iframe>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
-    <div style="position: relative; display:inline-block; top: -7px;">
-    <script type="text/javascript" src="https://platform.linkedin.com/in.js"></script><script type="in/share" data-counter="right"></script>
-    </div>
-</span>
-  </div>
-</div>
-
-<div class="mat_2 text-center no-border">
-   <div class="text-center" style="max-width: 100%; margin: 0 auto;">
-    <a href="/assets/cl/2" target="_blank" rel="nofollow" class="bnr_tr" data-bnr="2"><img src="/assets/2" alt="" class="img-fluid"></a>
-</div>
-<script type="text/javascript">ga_track('banner_impression', {banner: 2})</script> </div>
-
-<div class="page_columns listing_table">
-  <div class="text-right mb-1">It is
-    <strong>strictly</strong> prohibited to contact listing companies, unless you are a Buyer, Lessee or Mandated agent</div>
-  <div id="main_table"></div>
-</div>
-
-<div class="mat_3 text-center">
-   <a href="/assets/cl/3" target="_blank" rel="nofollow" class="bnr_tr" data-bnr="3"><img src="/assets/3" alt="" class="img-fluid"></a>
-<script type="text/javascript">ga_track('banner_impression', {banner: 3})</script> </div>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-
-    var listings = [{"model":"A380-841","serial":"6","yom":"2008","hc":"\/","engines":"RB211 Trent 970-84","cc":"12F<br>60C<br>399Y","at":"A","ad":"IMM","updated":"200504","contcomm":"<a href=\"mailto:sales@hifly.aero?subject=Query for SN 6 listed in myairtrade.com\" title=\"sales@hifly.aero\">Mrs. F. Brioso<\/a> | +351 21 1143 680 | <a href=\"https:\/\/www.myairtrade.com\/companies\/hifly\">Hi Fly<\/a><br>"}];
-
-  var isDefined = function(val) {
-    return typeof(val) !== "undefined" && val !== null;
-  };
-  var sortCustom = function(s1, s2) {
-    if(!isDefined(s1) && !isDefined(s2)) return 0;
-
-    if(!isDefined(s1)) return -1;
-
-    if(!isDefined(s2)) return 1;
-        
-    var isInt1 = !isNaN(s1);
-    var isInt2 = !isNaN(s2);
-
-    if(isInt1 && isInt2) return s1 - s2;
-    
-    if(!isInt1 && isInt2) return -1;
-    if(isInt1 && !isInt2) return 1;
-    
-    if(!isInt1 && !isInt2) return ("" + s1).localeCompare("" + s2);
-  };
-  
-    var ddl_at = [
-    { val: "" },
-    { val: "OL/A/S" },
-    { val: "OL/A" },
-    { val: "OL/S" },
-    { val: "A/S" },
-    { val: "OL" },
-    { val: "L" },
-    { val: "A" },
-    { val: "S" }
-  ];
-  var structure = [
-    { name: "model", title: "Model", type: "text" },
-    { name: "serial", title: "MSN", type: "text", sorter: sortCustom, headerTemplate: function () { return $("<div>").prop("title", "Manufacturer Serial Number").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { width: 80, name: "yom", title: "YoM", type: "text", headerTemplate: function () { return $("<div>").prop("title", "Year of Manufacture").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { name: "hc", title: "H/C", type: "text", headerTemplate: function () { return $("<div>").prop("title", "Total Flight Hours / Total Flight Cycles").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { name: "engines", title: "Engines", type: "text" },
-    { width: 70, name: "cc", title: "CC", type: "text", headerTemplate: function () { return $("<div>").prop("title", "Cabin Configuration<br>(F: First, C: Business, Y: Economy, FR: Freighter, CO: Combi, QC: Quick Change)").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { width: 70, name: "at", title: "AT", type: "select", items: ddl_at, valueField: "val", textField: "val", headerTemplate: function () { return $("<div>").prop("title", "Availability Type<br>(OL: Operating Lease, A: ACMI, S: Sale, E: Exchange)").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { width: 70, name: "ad", title: "AD", type: "text", headerTemplate: function () { return $("<div>").prop("title", "Availability Date in YYMMDD format").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { width: 80, name: "updated", title: "UPD", type: "text", headerTemplate: function () { return $("<div>").prop("title", "Latest UPDate in YYMMDD format").text(this.title).addClass('jsgrid-header-abbr'); } },
-    { width: 450, name: "contcomm", title: "Contact / Comments", type: "text" },
-  {
-    type: "control",
-      visible: false
-  }
-    ];
-  
-
-  $("#main_table").jsGrid({
-    width: "100%",
-    height: "auto",
-
-    inserting: false,
-    editing: false,
-    filtering: false,
-    sorting: true,
-    selecting: false,
-    paging: false,
-    pageLoading: false,
-    autoload: true,
-    noDataContent: 'No Listings Found',
-
-    fields: structure,
-
-    controller: {
-      loadData: function (filter) {
-        var response = listings;
-        for (var prop in filter) {
-          if (filter[prop].length > 0) {
-            response = $.grep(listings, function (item) {
-              var regexp = new RegExp(filter[prop], 'gi');
-              if (item[prop].match(regexp)) {
-                return item;
-              }
-            });
-          }
-        }
-        return response;
-      }
-    },
-    onDataLoaded: function (args) {
-      $('.jsgrid-header-abbr').tooltip({ container: 'body', html: true, placement: 'top' });
-    }
-  });
-  $("#main_table").jsGrid("sort", { field: "serial", order: "desc" });
-
-  $("#ddl_models").change(function () {
-    location.href = "https://www.myairtrade.com/available/" + $(this).val();
-  });
-
-  });
-</script>
-		</div>
-		<!--page_content -->
-
-				<div class="footer row no-gutters">
-			<div class="col-sm-6 text-left">
-				<a href="https://www.istat.org/" target="_blank">
-					<img src="https://www.myairtrade.com/images/istat.jpg" alt="ISTAT">
-				</a>
-			</div>
-			<div class="col-sm-6 text-right">
-				<a href="https://www.myairtrade.com/terms">Terms &amp; Conditions</a> |
-				<a href="https://www.myairtrade.com/privacy">Privacy Policy</a> |
-				Copyright &copy 2008 - 2020
-			</div>
-		</div>
-	</div>
-	<!-- container-->
-	<div id="loader">
-  <div class="spinner">
-    <div class="double-bounce1"></div>
-    <div class="double-bounce2"></div>
-  </div>
-</div>
-
-<script type="text/javascript" src="https://www.myairtrade.com/js/popper.min.js"></script>
-<script type="text/javascript" src="https://www.myairtrade.com/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.myairtrade.com/js/jquery-confirm.min.js"></script>
-</body>
-
-</html>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="/css/apdocuments/ap-case.xsl"?>
+<apCase>
+  <creationDate>2019-06-07</creationDate>
+  <apCaseHeader>
+    <fileNumbers>
+      <fileNumber>3-18832</fileNumber>
+    </fileNumbers>
+    <respondents>
+      <respondent>United Development Funding III, LP</respondent>
+      <respondent>United Development Funding IV</respondent>
+      <respondent>United Development Funding Income Fund V</respondent>
+    </respondents>
+    <caseLink>/litigation/apdocuments/ap-3-18832.xml</caseLink>
+  </apCaseHeader>
+  <releaseItem>
+    <date>2018-09-24</date>
+    <releaseNumber>34-84273</releaseNumber>
+    <otherReleaseNumbers />
+    <title>Order Instituting Administrative Proceedings and Notice of Hearing Pursuant to Section 12(j) of the Securities Exchange Act of 1934</title>
+    <secLink>/litigation/admin/2018/34-84273.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2018-10-17</date>
+    <releaseNumber>34-84447</releaseNumber>
+    <otherReleaseNumbers />
+    <title>Order Granting Extension</title>
+    <secLink>/litigation/opinions/2018/34-84447.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2018-10-24</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Respondent's Answer</title>
+    <secLink>/litigation/apdocuments/3-18832-event-5.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-02-26</date>
+    <releaseNumber>34-85197</releaseNumber>
+    <otherReleaseNumbers />
+    <title>Order Setting Briefing Schedule</title>
+    <secLink>/litigation/opinions/2019/34-85197.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-03-27</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Division Motion for Summary Disposition and Memorandum of Points and Authorities
+in Support w/Declaration of Keefe M. Bernstein in Support of Division's Motion for
+Summary Disposition, w/Exs. A-I</title>
+    <secLink>/litigation/apdocuments/3-18832-event-11.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-03-29</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Respondent's Motion and Supporting Memorandum, Hollis M. Greenlaw Delaration w/Exhibits 1-93</title>
+    <secLink>/litigation/apdocuments/3-18832-event-12.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-04-30</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Division's Opposition to Respondents' Motion for Summary Disposition</title>
+    <secLink>/litigation/apdocuments/3-18832-event-13.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-04-30</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Declaration of Keefe M. Bernstein in Support of Division's Opposition to Respondents' Motion for Summary Disposition</title>
+    <secLink>/litigation/apdocuments/3-18832-event-14.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-05-14</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Division's Reply in Support of its Motion for Summary Disposition</title>
+    <secLink>/litigation/apdocuments/3-18832-event-16.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-05-14</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Respondents' Reply Memorandum in Further Support of their Motion for Summary
+Disposition and in Opposition to the Division's Motion</title>
+    <secLink>/litigation/apdocuments/3-18832-event-17.pdf</secLink>
+  </releaseItem>
+  <releaseItem>
+    <date>2019-04-30</date>
+    <releaseNumber></releaseNumber>
+    <otherReleaseNumbers />
+    <title>Respondents' Memo in Opposition to Division's Summary Disposition Motion</title>
+    <secLink>/litigation/apdocuments/3-18832-event-14-b.pdf</secLink>
+  </releaseItem>
+</apCase>
